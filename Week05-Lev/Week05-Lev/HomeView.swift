@@ -98,11 +98,10 @@ struct HomeView: View {
             NavigationView {
                 VStack {
                     Text("Welcome!")
-                      .fontWeight(.bold)
+                      .fontWeight(.medium)
                       .multilineTextAlignment(.center)
                       .font(.system(size: 36))
                       .foregroundColor(.brown)
-                      .padding(2)
                     Text("Tap heart to see what you've been loving")
                       .fontWeight(.medium)
                       .multilineTextAlignment(.center)

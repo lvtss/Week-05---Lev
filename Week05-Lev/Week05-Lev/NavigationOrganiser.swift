@@ -8,11 +8,12 @@
 import Foundation
 import SwiftUI
 
-//struct NavigationOrganiserView: View {
-//    var body: some View {
-        //
-        //        Text("Navigation")
-        //    }
+struct NavigationOrganiserView: View {
+    var body: some View {
+        
+                Text("Navigation")
+            }
+}
         
         
         struct Topic: Identifiable, Hashable {
@@ -68,42 +69,42 @@ import SwiftUI
 //
 
 
-struct TopicList: View {
-
-    var contentSource: [Topic]
-
-    var body: some View {
-        Section {
-            List {
-                ForEach(contentSource) { row in
-                    NavigationLink(
-                        destination: Destination.view(forSelection: row.destination), label: {
-                            TopicRowView(title: row.title, description: row.description, systemIcon: row.systemSymbol)
-                        })
-                        .fixedSize(horizontal: false, vertical: true)
-                        .listRowInsets(.init(top: 15, leading: 15, bottom: 15, trailing: 15))
-
-                }
-            }
-            .listStyle(InsetGroupedListStyle())
-            .navigationTitle("Animating Shapes")
-
-        }
-        .safeAreaInset(edge: .top, spacing: 0) {
-            Color.clear.frame(height: 15)
-        }
-    }
-
-}
-
-struct TopicList_Previews: PreviewProvider {
-    static var previews: some View {
-        TopicList(contentSource: TopicData.homeContent)
-    }
-}
-
-struct NavigationOrganiser_View: PreviewProvider {
-    static var previews: some View {
-        NavigationOrganiser()
-    }
-}
+//struct TopicList: View {
+//
+//    var contentSource: [Topic]
+//
+//    var body: some View {
+//        Section {
+//            List {
+//                ForEach(contentSource) { row in
+//                    NavigationLink(
+//                        destination: Destination.view(forSelection: row.destination), label: {
+//                            TopicRowView(title: row.title, description: row.description, systemIcon: row.systemSymbol)
+//                        })
+//                        .fixedSize(horizontal: false, vertical: true)
+//                        .listRowInsets(.init(top: 15, leading: 15, bottom: 15, trailing: 15))
+//
+//                }
+//            }
+//            .listStyle(InsetGroupedListStyle())
+//            .navigationTitle("Animating Shapes")
+//
+//        }
+//        .safeAreaInset(edge: .top, spacing: 0) {
+//            Color.clear.frame(height: 15)
+//        }
+//    }
+//
+//}
+//
+//struct TopicList_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TopicList(contentSource: TopicData.homeContent)
+//    }
+//}
+//
+//struct NavigationOrganiser_View: PreviewProvider {
+//    static var previews: some View {
+//        NavigationOrganiser()
+//    }
+//}

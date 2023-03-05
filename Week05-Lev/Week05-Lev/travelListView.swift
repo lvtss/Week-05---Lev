@@ -11,7 +11,9 @@ import SwiftUI
 
 struct travelListView: View {
     var body: some View {
-    
-            Text("Travel")
+        
+        Text("Travel")
+    }
+}
         
   
