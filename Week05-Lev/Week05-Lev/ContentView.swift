@@ -6,8 +6,8 @@
 //
 
 import SwiftUI
-import AVKit
-import AVFoundation
+//import AVKit
+//import AVFoundation
 
 struct ContentView: View {
     var body: some View {
